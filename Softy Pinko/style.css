@@ -1,0 +1,150 @@
+.navigation{
+    position: fixed;
+    width: 70vw;
+    left: 15%;
+    margin-top: 30px;
+    border-radius: 50px;
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    z-index: 100;
+}
+
+.navigation-logo{
+    padding-left: 30px;
+}
+
+.navigation-menu{
+    display: flex;
+    padding-top: 15px;
+    padding-right: 20px;
+}
+
+.navigation-menu ul{
+    height: 100%;
+    display: flex;
+}
+
+.navigation-menu ul li{
+    list-style-type: none;
+    padding:10px;
+    margin: 10px;
+}
+
+.navigation-menu ul li a{
+    color: darkslategrey;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.navigation-menu ul li a:hover{
+    color:#ff589e
+}
+
+.header{
+    width: 100%;
+    background-image: url(./assets/image/theme.png);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.header .header-text{
+    position: absolute;
+    width: 100%;
+    top:30%;
+    text-align: center;
+    word-wrap: break-word;
+    padding-left: 34%;
+    padding-right: 34%;
+}
+
+.header .header-text .header-text-1{
+    font-size: 36px;
+    color:white;
+    margin-top:0px;
+}
+
+.header .header-text .header-text-1 span{
+    font-weight: bolder;
+}
+
+.header .header-text .header-text-2{
+    font-size: 15px;
+    color:white;
+}
+
+.header .header-button{
+    display: flex;
+    justify-content: center;
+}
+.header .header-button a{
+    position: absolute;
+    width: 10%;
+    height: 40px;
+    top:60%;
+    text-align: center;
+    color:white;
+    background-color: #ff589e;
+    border-radius: 50px;
+    padding:8px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.feature{
+    width: 70vw;
+    height: 265px;
+    margin-left: 15%;
+    margin-top: -190px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:white;
+    z-index:-1;
+}
+
+.feature a{
+    background-color: white;
+    height: 265px;
+    width: 22vw;
+    border-radius: 25px;
+    z-index:10;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none!important;
+    padding:30px;
+    text-align: center;
+}
+
+.feature a div{
+    background-color: #8261ee;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature a p{
+    font-weight: 400;
+    font-size: 18px;
+    color: #1e1e1e;
+    letter-spacing: 0.7px;
+    padding-top:15px;
+}
+
+.feature a span{
+    font-weight: 400;
+    font-size: 13px;
+    color: #777;
+    letter-spacing: 0.5px;
+    line-height: 25px;
+}
