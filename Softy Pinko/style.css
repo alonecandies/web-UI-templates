@@ -1,3 +1,12 @@
+html{
+    scroll-behavior: smooth;
+}
+
+::selection{
+    background: #ff589e;
+    color: #fff;
+}
+
 .navigation{
     position: fixed;
     width: 70vw;
@@ -10,6 +19,7 @@
     justify-content: space-between;
     background-color: white;
     z-index: 100;
+    box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.1);
 }
 
 .navigation-logo{
@@ -37,6 +47,7 @@
     color: darkslategrey;
     text-decoration: none;
     font-size: 15px;
+    transition: all 0.3s ease 0s;
 }
 
 .navigation-menu ul li a:hover{
@@ -53,40 +64,41 @@
     background-position: center center;
 }
 
-.header .header-text{
+.header .header-content{
     position: absolute;
-    width: 100%;
-    top:30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding-left: 130px;
+    padding-right: 130px;
+}
+.header .header-content .header-text{
     text-align: center;
     word-wrap: break-word;
-    padding-left: 34%;
-    padding-right: 34%;
 }
 
-.header .header-text .header-text-1{
+.header .header-content .header-text .header-text-1{
     font-size: 36px;
     color:white;
     margin-top:0px;
 }
 
-.header .header-text .header-text-1 span{
+.header .header-content .header-text .header-text-1 span{
     font-weight: bolder;
 }
 
-.header .header-text .header-text-2{
+.header .header-content .header-text .header-text-2{
     font-size: 15px;
     color:white;
 }
 
-.header .header-button{
+.header .header-content .header-button{
     display: flex;
     justify-content: center;
 }
-.header .header-button a{
-    position: absolute;
-    width: 10%;
+.header .header-content .header-button a{
+    width: 30%;
     height: 40px;
-    top:60%;
     text-align: center;
     color:white;
     background-color: #ff589e;
@@ -94,26 +106,32 @@
     padding:8px;
     font-weight: 400;
     font-size: 14px;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+.header .header-content .header-button a:hover{
+    background-color: #6f42c1;   
 }
 
 .feature{
-    width: 70vw;
-    height: 265px;
-    margin-left: 15%;
-    margin-top: -190px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color:white;
-    z-index:-1;
+    position: relative;
 }
 
-.feature a{
+.feature .feature-item{
+    position: absolute;
+    left:50%;
+    top:-200px;
+    background-color:rgba(0, 0, 0, 0);
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.feature .feature-item a{
     background-color: white;
     height: 265px;
     width: 22vw;
     border-radius: 25px;
-    z-index:10;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -121,9 +139,11 @@
     text-decoration: none!important;
     padding:30px;
     text-align: center;
+    box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.1);
+    margin: 15px;
 }
 
-.feature a div{
+.feature .feature-item a div{
     background-color: #8261ee;
     height: 90px;
     width: 90px;
@@ -131,9 +151,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s ease 0s;
 }
 
-.feature a p{
+.feature .feature-item a:hover div{
+    background-color: #ff589e;
+}
+
+.feature .feature-item a p{
     font-weight: 400;
     font-size: 18px;
     color: #1e1e1e;
@@ -141,10 +166,264 @@
     padding-top:15px;
 }
 
-.feature a span{
+.feature .feature-item a span{
     font-weight: 400;
     font-size: 13px;
     color: #777;
     letter-spacing: 0.5px;
     line-height: 25px;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    height: 100vh;
+    justify-content: space-between;
+    margin-left:15%;
+    margin-top:200px;
+}
+
+.about .about-discuss{
+    display: flex;
+}
+
+.about .about-discuss .discuss-image{
+    height: auto;
+    width: 700px;
+    display: flex;
+    justify-content: center;
+}
+
+.about .about-discuss .discuss-text{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px 0px 100px;
+}
+
+.about .about-discuss .discuss-text p{
+    font-weight: 400;
+    font-size: 25px;
+    color: #1e1e1e;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about .about-discuss .discuss-text span{
+    font-weight: 400;
+    font-size: 17px;
+    color: #777;
+    opacity: 0.9;
+}
+
+.about .about-growing{
+    display: flex;
+}
+
+.about .about-growing .growing-image{
+    height: auto;
+    width: 700px;
+    display: flex;
+    justify-content: center;
+}
+
+.about .about-growing .growing-text{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 100px 0px 0px;
+}
+
+.about .about-growing .growing-text p{
+    font-weight: 400;
+    font-size: 25px;
+    color: #1e1e1e;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about .about-growing .growing-text span{
+    font-weight: 400;
+    font-size: 17px;
+    color: #777;
+    opacity: 0.9;
+}
+
+.work-process{
+    width: 100%;
+    background-image: url(./assets/image/work-process-bg.png);
+    background-size: cover;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: 100px;
+}
+
+.work-process .work-text {
+    padding-top:120px;
+    margin-left: 32vw;
+    margin-right: 32vw;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.work-process .work-text p{
+    color: #fff;
+    font-weight: 400;
+    font-size: 28px;
+}
+
+.work-process .work-text span{
+    color: #fff;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.work-process .work-list ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    padding:0px;
+    margin-top: 40px;
+}
+
+.work-process .work-list ul li{
+    
+}
+
+.work-process .work-list ul li a{
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease 0s;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none!important;
+    width: 10vw;
+    margin: 15px;
+}
+
+.work-process .work-list ul li a:hover{
+    transform: translateY(-10%);
+}
+
+.work-process .work-list ul li a div{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-process .work-list ul li a p{
+    margin-bottom: 0px;
+    font-weight: 400;
+    font-size: 17px;
+    color: #1e1e1e;
+}
+
+.work-process .work-list ul li a span{
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(7,7,7,0.5);
+}
+
+.testimonials{
+    margin-top: 7vw;
+}
+
+.testimonials .testimonials-text{
+    text-align: center;
+    word-wrap: break-word;
+    padding-left: 35vw;
+    padding-right: 35vw;
+}
+
+.testimonials .testimonials-text p{
+    font-weight: 400;
+    font-size: 30px;
+    color: #1e1e1e;
+}
+
+.testimonials .testimonials-text span{
+    font-size: 16px;
+    color: rgba(7, 7, 7, 0.6);
+}
+
+.testimonials .testimonials-items{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.testimonials .testimonials-items ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    padding:0px;
+}
+
+.testimonials .testimonials-items ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.10);
+    padding: 0px 25px 0px 25px;
+    width: 22vw;
+    height: 20vw;
+    margin:30px 15px 0px 15px;
+}
+
+.testimonials .testimonials-items ul li:hover .testimonials-item-card-name{
+    transform: translateX(10%);
+}
+
+.testimonials .testimonials-items ul li .testimonials-item-icon{
+    display: flex;
+    justify-content: center;
+    margin-bottom:30px;
+}
+
+.testimonials .testimonials-items ul li p{
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(7, 7, 7, 0.6);
+    margin-bottom: 30px;
+}
+
+.testimonials .testimonials-items ul li .testimonials-item-card{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.testimonials .testimonials-items ul li .testimonials-item-card .testimonials-item-card-avatar img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.testimonials .testimonials-items ul li .testimonials-item-card .testimonials-item-card-name{
+    display: flex;
+    flex-direction: column;
+    margin:5px 0px 0px 20px;
+    transition: all 0.3s ease 0s;
+}
+
+.testimonials .testimonials-items ul li .testimonials-item-card .testimonials-item-card-name .name{
+    display: block;
+    font-weight: 400;
+    font-size: 17px;
+    color: #1e1e1e;
+}
+
+.testimonials .testimonials-items ul li .testimonials-item-card .testimonials-item-card-name .position{
+    display: block;
+    font-weight: 400;
+    font-size: 15px;
+    color: #ff589e;
 }

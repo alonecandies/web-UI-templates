@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-zoom/1.7.21/jquery.zoom.min.js" integrity="sha512-m5kAjE5cCBN5pwlVFi4ABsZgnLuKPEx0fOnzaH5v64Zi3wKnhesNUYq4yKmHQyTa3gmkR6YeSKW1S+siMvgWtQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <title>Home - Tyche Demo</title>
+</head>
+<body>
+    <!-- Top header -->
+    <header class="top-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <i class="fa fa-envelope-o"><span> flyass@gmail.com</span></i>
+                </div>
+                <div class="col-3">
+                    <form>
+                        <label for="searchInput"></label>
+                        <input type="text" id="searchInput" name="searchInput" placeholder="Search ...">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <div class="col-1">
+                    <a href="">
+                        <i class="fa fa-user"><span> Account</span></i>
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="">
+                        <i class="fa fa-shopping-cart"> My Cart - $ 0</i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ------------ -->
+    <!-- Navigation header -->
+    <header class="nav-header">
+        <div class="container">
+            <a class="logo" href=""><img src="./assets/images/logo and cover/logo.webp"></a>
+            <ul>
+                <li><a href="" style="color:#f66249">HOME</a></li>
+                <li><a href="">SHOP</a></li>
+                <li><a href="">BLOG</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- -------------------- -->
+    <!-- Using slick.js to create a mouse-dragable carousel -->
+    <section class="slick-slider fluid-container">
+        <div class="slick-items">
+            <div class="slick-items-content">
+                <div class="text-content">
+                    <span class="year">2021</span>
+                    <span class="season">Autumn Collection</span>
+                </div>
+                <div class="button-content">
+                    <a class="shop-now" href="">Shop Now</a>
+                    <a class="learn-more" href="">Learn More</a>
+                </div>
+            </div>
+            <img src="./assets/images/logo and cover/hero.webp" alt="">
+        </div>
+        <div class="slick-items">
+            <div class="slick-items-content">
+                <div class="text-content">
+                    <span class="year">2021</span>
+                    <span class="season">Autumn Collection</span>
+                </div>
+                <div class="button-content">
+                    <a class="shop-now" href="">Shop Now</a>
+                    <a class="learn-more" href="">Learn More</a>
+                </div>
+            </div>
+            <img src="./assets/images/logo and cover/hero.webp" alt="">
+        </div>
+    </section>
+    <script src="./assets/js/slickCarousel.js"></script>
+    <!-- ----------------------------- -->
+    <!-- Information -->
+    <section class="info">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <i style="font-size: 35px;" class="fa fa-globe"></i>
+                    <div class="content">
+                        <span class="title">Free shipping</span>
+                        <span class="direct">On all orders over 90$</span>
+                    </div>
+                </div>
+                <div class="col-4 separate-line">
+                    <i style="font-size: 40px;" class="fa fa-mobile-phone"></i>
+                    <div class="content">
+                        <span class="title">Call us anytime</span>
+                        <span class="direct">+04786445953</span>
+                    </div>
+                </div>
+                <div class="col-4 separate-line">
+                    <i style="font-size: 30px;" class="fa fa-map"></i>
+                    <div class="content">
+                        <span class="title">Our location</span>
+                        <span class="direct">557-6308 Lacinia Road. NYC</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ------------------- -->
+    <!-- Product -->
+    <section class="product">
+        <!-- Product -> Product-area-1 -->
+        <div class="product-area-1">
+            <div class="container">
+                <!-- Product -> Product-area-1 -> Shirt -->
+                <div class="product-category">
+                    <span class="category">All black tops</span>
+                    <div class="btn">
+                        <a href="" class="prev-btn"><i class="fa fa-angle-left"></i></a>
+                        <a href="" class="next-btn"><i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="product-items">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="item-image">
+                                <img src="/assets/images/all black tops/black-top.jpg">
+                            </div>
+                            <div class="item-detail">
+                                <a class="item-name" href="">Black Top</a>
+                                <span>$35.00</span>
+                                <a class="add-to-cart" href=""><i class="fa fa-shopping-cart"> ADD TO CART</i></a>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="item-image">
+                                <img src="/assets/images/all black tops/little-black-top.jpg">
+                            </div>
+                            <div class="item-detail">
+                                <a class="item-name" href="">Little Black Top</a>
+                                <div>
+                                    <span style="text-decoration: line-through;margin-right: 10px;">$35.00</span>
+                                    <span style="color: #f66249;">$20.00</span>
+                                </div>
+                                <a class="add-to-cart" href=""><i class="fa fa-shopping-cart"> ADD TO CART</i></a>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="item-image">
+                                <img src="/assets/images/all black tops/little-black-shirt.jpg">
+                            </div>
+                            <div class="item-detail">
+                                <a class="item-name" href="">Little Black Shirt</a>
+                                <span>$40.00</span>
+                                <a class="add-to-cart" href=""><i class="fa fa-shopping-cart"> ADD TO CART</i></a>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="sale-detail">
+                                <span class="sale-content">SAVE UP TO</span>
+                                <span class="sale-percent">50%</span>
+                                <span class="sale-content">ON OUR GALLA DRESSES</span>
+                                <a href="">BUY NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ---------------- -->
+                <!-- Product -> Product-area-1 -> Shoes -->
+                <div class="product-category shoes-category">
+                    <span class="category">HIGH HEEL SHOES</span>
+                    <div class="btn">
+                        <a href="" class="prev-btn"><i class="fa fa-angle-left"></i></a>
+                        <a href="" class="next-btn"><i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="product-items shoes-items">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="sale-detail">
+                                <span class="sale-content">SAVE UP TO</span>
+                                <span class="sale-percent">50%</span>
+                                <span class="sale-content">ON OUR GALLA DRESSES</span>
+                                <a href="">BUY NOW</a>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="item-image">
+                                <img src="/assets/images/high heel shoes/red-magawi-shoes.jpg">
+                            </div>
+                            <div class="item-detail">
+                                <a class="item-name" href="">Red Magawi Shoes</a>
+                                <div>
+                                    <span style="text-decoration: line-through;margin-right: 10px;">$35.00</span>
+                                    <span style="color: #eaab76;">$25.00</span>
+                                </div>
+                                <a class="add-to-cart" href=""><i class="fa fa-shopping-cart"> ADD TO CART</i></a>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="item-image">
+                                <img src="/assets/images/high heel shoes/blue-magawi-shoes.jpg">
+                            </div>
+                            <div class="item-detail">
+                                <a class="item-name" href="">Blue Magawi Shoes</a>
+                                <span>$37.00</span>
+                                <a class="add-to-cart" href=""><i class="fa fa-shopping-cart"> ADD TO CART</i></a>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="item-image">
+                                <img src="/assets/images/high heel shoes/beije-magawi-shoes.jpg">
+                            </div>
+                            <div class="item-detail">
+                                <a class="item-name" href="">Beije Magawi Shoes</a>
+                                <span>$30.00</span>
+                                <a class="add-to-cart" href=""><i class="fa fa-shopping-cart"> ADD TO CART</i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ------------------- -->
+            </div>
+        </div>
+        <!-- ---------------- -->
+        <!-- Product-area-2 -->
+        <div class="product-area-2">
+            <div class="container">
+                <div class="row">
+                    <!-- Product-area-2 -> Most wanted -->
+                    <div class="col-4">
+                        <div class="category"><span>MOST WANTED</span></div>
+                        <div class="list-items">
+                            <div class="item">
+                                <div class="item-image">
+                                    <img src="assets/images/most wanted/fitt-belts.jpg">
+                                </div>
+                                <div class="item-detail">
+                                    <a href="" class="item-name"><span>FITT Belts</span></a>
+                                    <span class="item-price">$35.00</span>
+                                    <a href="" class="add-to-cart"><i class="fa fa-shopping-cart"> ADD TO CART</i></a>
+                                </div>
+                            </div>
+                            <div class="item separate-line">
+                                <div class="item-image">
+                                    <img src="assets/images/most wanted/magnolia-dress.jpg">
+                                </div>
+                                <div class="item-detail">
+                                    <a href="" class="item-name"><span>Magnolia Dress</span></a>
+                                    <span class="item-price">$25.00</span>
+                                    <a href="" class="add-to-cart"><i class="fa fa-shopping-cart"> ADD TO CART</i></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item-image">
+                                    <img src="assets/images/most wanted/rocadi-jeans.jpg">
+                                </div>
+                                <div class="item-detail">
+                                    <a href="" class="item-name"><span>Rocadi Jeans</span></a>
+                                    <div class="item-price">
+                                        <span style="text-decoration: line-through;">$70.00</span>
+                                        <span style="color: #99ca45; margin-left: 10px;">$60.00</span>
+                                    </div>
+                                    <a href="" class="add-to-cart"><i class="fa fa-shopping-cart"> ADD TO CART</i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- -------------------- -->
+                    <!-- Product-area-2 -> Scarf -->
+                    <div class="col-4 scarf">
+                        <div class="category"><span>SCARFS</span></div>
+                        <div class="list-items">
+                            <div class="item">
+                                <div class="item-image">
+                                    <img src="assets/images/scarfs/istwic.jpg">
+                                </div>
+                                <div class="item-detail">
+                                    <a href="" class="item-name"><span>Istwic Scarf</span></a>
+                                    <div class="item-price">
+                                        <span style="text-decoration: line-through;">$37.00</span>
+                                        <span style="color: #263585; margin-left: 10px;">$23.00</span>
+                                    </div>
+                                    <a href="" class="add-to-cart"><i class="fa fa-shopping-cart"> ADD TO CART</i></a>
+                                </div>
+                            </div>
+                            <div class="item separate-line">
+                                <div class="item-image">
+                                    <img src="assets/images/scarfs/jennifer.jpg">
+                                </div>
+                                <div class="item-detail">
+                                    <a href="" class="item-name"><span>Jennifer Scarf</span></a>
+                                    <span class="item-price">$36.00</span>
+                                    <a href="" class="add-to-cart"><i class="fa fa-shopping-cart"> ADD TO CART</i></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item-image">
+                                    <img src="assets/images/scarfs/andora.jpg">
+                                </div>
+                                <div class="item-detail">
+                                    <a href="" class="item-name"><span>Andora Scarf</span></a>
+                                    <span class="item-price">$37.00</span>
+                                    <a href="" class="add-to-cart"><i class="fa fa-shopping-cart"> ADD TO CART</i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ------------------- -->
+                    <!-- Product-area-2 -> On sale -->
+                    <div class="col-4 on-sale">
+                        <div class="category"><span>ON SALE</span></div>
+                        <div class="list-items">
+                            <div class="item">
+                                <div class="item-image">
+                                    <img src="assets/images/on sale/marina-style.jpg">
+                                </div>
+                                <div class="item-detail">
+                                    <a href="" class="item-name"><span>Marina Style</span></a>
+                                    <span class="item-price">$35.00</span>
+                                    <a href="" class="add-to-cart"><i class="fa fa-shopping-cart"> ADD TO CART</i></a>
+                                </div>
+                            </div>
+                            <div class="item separate-line">
+                                <div class="item-image">
+                                    <img src="assets/images/on sale/amari-shirt.jpg">
+                                </div>
+                                <div class="item-detail">
+                                    <a href="" class="item-name"><span>Amari Shirt</span></a>
+                                    <span class="item-price">$25.00</span>
+                                    <a href="" class="add-to-cart"><i class="fa fa-shopping-cart"> ADD TO CART</i></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item-image">
+                                    <img src="assets/images/on sale/manago-shirt.jpg">
+                                </div>
+                                <div class="item-detail">
+                                    <a href="" class="item-name"><span>Manago Shirt</span></a>
+                                    <span class="item-price">$25.00</span>
+                                    <a href="" class="add-to-cart"><i class="fa fa-shopping-cart"> ADD TO CART</i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- --------------------- -->
+                </div>
+            </div>
+        </div>
+        <!-- Product-area-3 -->
+        <div class="product-area-1 product-area-3">
+            <div class="container">
+                <div class="product-category">
+                    <span class="category">FEATURED</span>
+                    <div class="btn">
+                        <a href="" class="prev-btn"><i class="fa fa-angle-left"></i></a>
+                        <a href="" class="next-btn"><i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="product-items">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="item-image">
+                                <img src="/assets/images/featured/manago-shirt.jpg">
+                            </div>
+                            <div class="item-detail">
+                                <a class="item-name" href="">Manago Shirt</a>
+                                <div class="rating-stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star-half-o checked"></span>
+                                    <span class="fa fa-star-o"></span>
+                                </div>
+                                <span>$25.00</span>
+                                <a class="add-to-cart" href=""><i class="fa fa-shopping-cart"> ADD TO CART</i></a>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="item-image">
+                                <img src="/assets/images/featured/blue-sweater.jpg">
+                            </div>
+                            <div class="item-detail">
+                                <a class="item-name" href="">Blue Sweater</a>
+                                <div class="rating-stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star-o"></span>
+                                </div>
+                                <div>
+                                    <span style="text-decoration: line-through;margin-right: 10px;">$25.00</span>
+                                    <span style="color: #ffab1a;">$15.00</span>
+                                </div>
+                                <a class="add-to-cart" href=""><i class="fa fa-shopping-cart"> ADD TO CART</i></a>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="item-image">
+                                <img src="/assets/images/featured/asabi-jeans.jpg">
+                            </div>
+                            <div class="item-detail">
+                                <a class="item-name" href="">Asabi - Jeans</a>
+                                <div class="rating-stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                                <span>$25.00</span>
+                                <a class="add-to-cart" href=""><i class="fa fa-shopping-cart"> ADD TO CART</i></a>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="item-image">
+                                <img src="/assets/images/featured/merchantile-blouse.jpg">
+                            </div>
+                            <div class="item-detail">
+                                <a class="item-name" href="">Merchantile - Blouse</a>
+                                <div class="rating-stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star-o"></span>
+                                    <span class="fa fa-star-o"></span>
+                                </div>
+                                <span>$15.00</span>
+                                <a class="add-to-cart" href=""><i class="fa fa-shopping-cart"> ADD TO CART</i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- -------------- -->
+        <!-- Product-area-4 -->
+        <div class="product-area-1 product-area-4">
+            <div class="container">
+                <div class="product-category">
+                    <span class="category">FROM THE BLOG</span>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="time">
+                            <span class="date">12</span>
+                            <span class="month">Jun</span>
+                        </div>
+                        <div class="blog-image">
+                            <a href=""><img src="./assets/images/blog/jacket.jpg"></a>
+                        </div>
+                        <div class="blog-content">
+                            <a href=""><span class="blog-title">Jackets For The Soul. What Color Is Yours?</span></a>
+                            <span class="blog-about">
+                                <i class="fa fa-user"><a href=""> raibercristian </a>/</i>
+                                <i class="fa fa-comments"><a href=""> 1</a></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="time">
+                            <span class="date">12</span>
+                            <span class="month">Jun</span>
+                        </div>
+                        <div class="blog-image">
+                            <a href=""><img src="./assets/images/blog/long-leg.jpg"></a>
+                        </div>
+                        <div class="blog-content">
+                            <a href=""><span class="blog-title">Long Legs? No Longer A Myth! Check it out!</span></a>
+                            <span class="blog-about">
+                                <i class="fa fa-user"><a href=""> raibercristian </a>/</i>
+                                <i class="fa fa-comments"><a href=""> 0</a></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 blog-part-2">
+                        <div class="time">
+                            <span class="date">12</span>
+                            <span class="month">Jun</span>
+                        </div>
+                        <div class="blog-image">
+                            <a href=""><img src="./assets/images/blog/fabric.jpg"></a>
+                        </div>
+                        <div class="blog-content">
+                            <a href=""><span class="blog-title">Best Fabrics For Your Dream Dress!</span></a>
+                            <span class="blog-about">
+                                <i class="fa fa-user"><a href=""> raibercristian </a>/</i>
+                                <i class="fa fa-comments"><a href=""> 0</a></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-6 blog-part-2">
+                        <div class="time">
+                            <span class="date">12</span>
+                            <span class="month">Jun</span>
+                        </div>
+                        <div class="blog-image">
+                            <a href=""><img src="./assets/images/blog/trend.jpg"></a>
+                        </div>
+                        <div class="blog-content">
+                            <a href=""><span class="blog-title">Latest Trends For Autumn Are Here!</span></a>
+                            <span class="blog-about">
+                                <i class="fa fa-user"><a href=""> raibercristian </a>/</i>
+                                <i class="fa fa-comments"><a href=""> 1</a></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- -------------- -->
+        <!-- Product-area-5 -->
+        <div class="product-area-1 product-area-5" style="background-color: #fff;">
+            <div class="container">
+                <div class="product-category">
+                    <span class="category">TRENDS</span>
+                    <div class="btn">
+                        <a href="" class="prev-btn"><i class="fa fa-angle-left"></i></a>
+                        <a href="" class="next-btn"><i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="product-items">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="item-image">
+                                <img src="/assets/images/trends/marina-style.jpg">
+                            </div>
+                            <div class="item-detail">
+                                <a class="item-name" href="">Marina Style</a>
+                                <span>$35.00</span>
+                                <a class="add-to-cart" href=""><i class="fa fa-shopping-cart"> ADD TO CART</i></a>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="item-image">
+                                <img src="/assets/images/trends/amari-shirt.jpg">
+                            </div>
+                            <div class="item-detail">
+                                <a class="item-name" href="">Amari Shirt</a>
+                                <span>$25.00</span>
+                                <a class="add-to-cart" href=""><i class="fa fa-shopping-cart"> ADD TO CART</i></a>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="item-image">
+                                <img src="/assets/images/trends/marcara-sleeveless-dress.jpg">
+                            </div>
+                            <div class="item-detail">
+                                <a class="item-name" href="">Marcara Sleeveless Dress</a>
+                                <span>$55.00</span>
+                                <a class="add-to-cart" href=""><i class="fa fa-shopping-cart"> ADD TO CART</i></a>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="item-image">
+                                <img src="/assets/images/trends/black-top.jpg">
+                            </div>
+                            <div class="item-detail">
+                                <a class="item-name" href="">Black Top</a>
+                                <span>$35.00</span>
+                                <a class="add-to-cart" href=""><i class="fa fa-shopping-cart"> ADD TO CART</i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- -------------- -->
+    </section>
+    <script src="assets/js/zoomImage.js"></script>
+    <!-- ------------------- -->
+    <!-- About-footer -->
+    <section class="about-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <div class="title"><span>Meta</span></div>
+                    <ul class="meta">
+                        <li><i class="fa fa-angle-right"><a href=""> Log in</a></i></li>
+                        <li><i class="fa fa-angle-right"><a href=""> Entries feed</a></i></li>
+                        <li><i class="fa fa-angle-right"><a href=""> Comments feed</a></i></li>
+                        <li><i class="fa fa-angle-right"><a href=""> WordPress.org</a></i></li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <div class="title"><span>Recent Posts</span></div>
+                    <ul class="recent-posts">
+                        <li>
+                            <a href=""><img src="./assets/images/blog/jacket.jpg"></a>
+                            <a href=""><span>Jackets For The Soul. What Color Is Yours?</span></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="./assets/images/blog/fabric.jpg"></a>
+                            <a href=""><span>Best Fabrics For Your Dream Dress!</span></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="./assets/images/blog/long-leg.jpg"></a>
+                            <a href=""><span>Long Legs? No Longer A Myth! Check it out!</span></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="./assets/images/blog/trend.jpg"></a>
+                            <a href=""><span>Latest Trends For Autumn Are Here!</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <div class="title"><span>About</span></div>
+                    <div class="about">
+                        <p>Pri quas audiam virtute ut, case utamur fuisset eam ut, iisque accommodare an eam.</p>
+                        <p>Reque blandit qui eu, cu vix nonumy volumus. Legendos intellegam id usu, vide oporteat vix eu, id illud principes has. Nam tempor utamur gubergren no.</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="title"><span>Tags</span></div>
+                    <div class="tags">
+                        <a href="">Autumn</a>
+                        <a href="">dress</a>
+                        <a href="">fashion</a>
+                        <a href="">jackets</a>
+                        <a href="">stockings</a>
+                        <a href="">trends</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ----------------- -->
+    <section class="copyright-footer">
+        <div class="container">
+            <a href=""><i class="fa fa-facebook-f"></i></a>
+            <a href=""><i class="fa fa-twitter"></i></a>
+            <a href=""><i class="fa fa-dribbble"></i></a>
+            <a href=""><i class="fa fa-vimeo"></i></a>
+            <a href=""><i class="fa fa-youtube"></i></a>
+            <span class="copyright">Copyright © 2021 | Theme: Tyche | Powered by WordPress</span>
+        </div>
+    </section>
+</body>
+</html>
