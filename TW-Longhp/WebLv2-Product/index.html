@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <title>Black Top - Tyche Demo</title>
+</head>
+<body>
+    <!-- Top header -->
+    <header class="top-header">
+        <div class="container">
+            <div class="row">
+                <div class="top-header__email col-lg-6 col-md-6 col-12">
+                    <i class="fa fa-envelope-o"><span> flyass@gmail.com</span></i>
+                </div>
+                <div class="top-header__search col-lg-3 col-md-3 col-12">
+                    <form>
+                        <label for="searchInput"></label>
+                        <input type="text" id="searchInput" name="searchInput" placeholder="Search ...">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <div class="top-header__account col-lg-1 col-md-3 col-12">
+                    <a href="">
+                        <i class="fa fa-user"><span> Account</span></i>
+                    </a>
+                </div>
+                <div class="top-header__cart col-lg-2 col-12">
+                    <a href="">
+                        <i class="fa fa-shopping-cart"> My Cart - $ 0</i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ------------ -->
+    <!-- Navigation header -->
+    <header class="nav-header">
+        <div class="container">
+            <a class="logo" href=""><img src="./assets/images/logo and cover/logo.webp"></a>
+            <ul id="nav-header">
+                <li class="icon">
+                    <a href="javascript:void(0);"  onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </li>
+                <li><a href="">HOME</a></li>
+                <li><a href="">SHOP</a></li>
+                <li><a href="">BLOG</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- -------------------- -->
+    <!-- Navigation -->
+    <section class="navigation">
+        <div class="container">
+            <a href="" class="home">Home</a>
+            <span> / </span>
+            <a href="" class="tops">Tops</a>
+            <span> / Black Top</span>
+        </div>
+    </section>
+    <!-- -------------------- -->
+    <!-- Product Detail -->
+    <section class="product">
+        <div class="container">
+            <div class="row">
+                <div class="product-image zoom-image col-md-6 col-12">
+                    <img src="./assets/images/all black tops/black-top.jpg">
+                    <a href=""><i class="fa fa-search"></i></a>
+                </div>
+                <div class="product-details col-md-6 col-12">
+                    <span class="product-details__name">Black Top</span>
+                    <span class="product-details__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+                    <span class="product-details__price">$35.00</span>
+                    <form class="product-details__buy">
+                        <div class="amount">
+                            <a href="javascript:void(0);" class="amount-dec" onclick="decValue()">-</a>
+                            <input type="number" class="amount-value" placeholder inputmode="numeric" value="1" step="1" min="1" onfocus="focusInput(this)" onblur="blurInput(this)">
+                            <a href="javascript:void(0);" class="amount-inc" onclick="incValue()">+</a>
+                        </div>
+                        <a class="add-to-cart" href=""><i class="fa fa-shopping-cart"> ADD TO CART</i></a>
+                    </form>
+                    <div class="product-details__category">
+                        <span>Categories: </span>
+                        <a href="">Tops</a>
+                        <span>, </span>
+                        <a href="">Trends</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- -------------------- -->
+    <!-- Tab description and review -->
+    <section class="tabs">
+        <div class="container">
+            <div class="tab-menu">
+                <a href="javascript:void(0);" class="tab-menu__tablink active" data-type="description">Description</a>
+                <a href="javascript:void(0);" class="tab-menu__tablink" data-type="review">Review (0)</a>
+            </div>
+            <div class="tab-wrap">
+                <div id="description" class="tab-wrap__content active">
+                    <h3>Description</h3>
+                    <p>Pri quas audiam virtute ut, case utamur fuisset eam ut, iisque accommodare an eam. Reque blandit qui eu, cu vix nonumy volumus. Legendos intellegam id usu, vide oporteat vix eu, id illud principes has. Nam tempor utamur gubergren no.</p>
+                    <p>Ex soleat habemus usu, te nec eligendi deserunt vituperata. Natum consulatu vel ea, duo cetero repudiare efficiendi cu. Has at quas nonumy facilisis, enim percipitur mei ad. Mazim possim adipisci sea ei, omnium aeterno platonem mei no.</p>
+                </div>
+                <div id="review" class="tab-wrap__content">
+                    <div class="review-form">
+                        <h3>Reviews</h3>
+                        <p>There are no reviews yet.</p>
+                        <span>Be the first to review “Black Top”</span>
+                        <span>Your email address will not be published. Required fields are marked *</span>
+                        <span>Your rating *</span>
+                        <form>
+                            <div id="rating">
+                                <input type="radio" id="star5" name="rating" value="5" />
+                                <label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                            
+                                <input type="radio" id="star4" name="rating" value="4" />
+                                <label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                            
+                                <input type="radio" id="star3" name="rating" value="3" />
+                                <label class = "full" for="star3" title="Meh - 3 stars"></label>
+                            
+                                <input type="radio" id="star2" name="rating" value="2" />
+                                <label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                            
+                                <input type="radio" id="star1" name="rating" value="1" />
+                                <label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                            </div>
+                            <div class="review-form__info">
+                                <span>Your review *</span>
+                                <textarea class="review-input" type="text" onfocus="focusInput(this)" onblur="blurInput(this)"></textarea>
+                                <div class="contact row">
+                                    <div class="name col-md-4 col-12">
+                                        <span>Name *</span>
+                                        <input type="text" onfocus="focusInput(this)" onblur="blurInput(this)">
+                                    </div>
+                                    <div class="email col-md-4 col-12">
+                                        <span>Email *</span>
+                                        <input type="text" onfocus="focusInput(this)" onblur="blurInput(this)">
+                                    </div>
+                                    <div class="col-md-1 col-12"><a href="" >Submit</a></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- -------------------------- -->
+    <!-- Related products -->
+    <section class="related-products">
+        <div class="container">
+            <h3>Related products</h3>
+            <div class="row">
+                <div class="related-products__item col-md-3 col-6">
+                    <a href="" class="">
+                        <div class="image">
+                            <img src="./assets/images/all black tops/black-top.jpg" alt="">
+                        </div>
+                        <span class="name">Beije heel shoes</span>
+                        <span class="price">$35.00</span>
+                    </a>
+                    <a class="add-to-cart" href=""><i class="fa fa-shopping-cart"> ADD TO CART</i></a>
+                </div>
+                <div class="related-products__item col-md-3 col-6">
+                    <a href="" class="">
+                        <div class="image">
+                            <img src="./assets/images/all black tops/black-top.jpg" alt="">
+                        </div>
+                        <span class="name">Beije heel shoes</span>
+                        <span class="price">$35.00</span>
+                    </a>
+                    <a class="add-to-cart" href=""><i class="fa fa-shopping-cart"> ADD TO CART</i></a>
+                </div>
+                <div class="related-products__item col-md-3 col-6">
+                    <a href="" class="">
+                        <div class="image">
+                            <img src="./assets/images/all black tops/black-top.jpg" alt="">
+                        </div>
+                        <span class="name">Beije heel shoes</span>
+                        <span class="price">$35.00</span>
+                    </a>
+                    <a class="add-to-cart" href=""><i class="fa fa-shopping-cart"> ADD TO CART</i></a>
+                </div>
+                <div class="related-products__item col-md-3 col-6">
+                    <a href="" class="">
+                        <div class="image">
+                            <img src="./assets/images/all black tops/black-top.jpg" alt="">
+                        </div>
+                        <span class="name">Beije heel shoes</span>
+                        <span class="price">$35.00</span>
+                    </a>
+                    <a class="add-to-cart" href=""><i class="fa fa-shopping-cart"> ADD TO CART</i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ---------------- -->
+    <!-- About-footer -->
+    <section class="about-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="title"><span>Meta</span></div>
+                    <ul class="meta">
+                        <li><i class="fa fa-angle-right"><a href=""> Log in</a></i></li>
+                        <li><i class="fa fa-angle-right"><a href=""> Entries feed</a></i></li>
+                        <li><i class="fa fa-angle-right"><a href=""> Comments feed</a></i></li>
+                        <li><i class="fa fa-angle-right"><a href=""> WordPress.org</a></i></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="title"><span>Recent Posts</span></div>
+                    <ul class="recent-posts">
+                        <li>
+                            <a href=""><img src="./assets/images/blog/jacket.jpg"></a>
+                            <a href=""><span>Jackets For The Soul. What Color Is Yours?</span></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="./assets/images/blog/fabric.jpg"></a>
+                            <a href=""><span>Best Fabrics For Your Dream Dress!</span></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="./assets/images/blog/long-leg.jpg"></a>
+                            <a href=""><span>Long Legs? No Longer A Myth! Check it out!</span></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="./assets/images/blog/trend.jpg"></a>
+                            <a href=""><span>Latest Trends For Autumn Are Here!</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="title"><span>About</span></div>
+                    <div class="about">
+                        <p>Pri quas audiam virtute ut, case utamur fuisset eam ut, iisque accommodare an eam.</p>
+                        <p>Reque blandit qui eu, cu vix nonumy volumus. Legendos intellegam id usu, vide oporteat vix eu, id illud principes has. Nam tempor utamur gubergren no.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="title"><span>Tags</span></div>
+                    <div class="tags">
+                        <a href="">Autumn</a>
+                        <a href="">dress</a>
+                        <a href="">fashion</a>
+                        <a href="">jackets</a>
+                        <a href="">stockings</a>
+                        <a href="">trends</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ----------------- -->
+    <section class="copyright-footer">
+        <div class="container">
+            <a href=""><i class="fa fa-facebook-f"></i></a>
+            <a href=""><i class="fa fa-twitter"></i></a>
+            <a href=""><i class="fa fa-dribbble"></i></a>
+            <a href=""><i class="fa fa-vimeo"></i></a>
+            <a href=""><i class="fa fa-youtube"></i></a>
+            <span class="copyright">Copyright © 2021 | Theme: Tyche | Powered by WordPress</span>
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-zoom/1.7.21/jquery.zoom.min.js" integrity="sha512-m5kAjE5cCBN5pwlVFi4ABsZgnLuKPEx0fOnzaH5v64Zi3wKnhesNUYq4yKmHQyTa3gmkR6YeSKW1S+siMvgWtQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/js/navToggle.js"></script>
+    <script src="./assets/js/zoomImage.js"></script>
+    <script src="./assets/js/productAmount.js"></script>
+    <script src="./assets/js/tabSwitching.js"></script>
+</body>
+</html>
