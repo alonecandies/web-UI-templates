@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Snipp</title>
+</head>
+<body>
+    <section id="home"></section>
+    <!-- Particles.js -->
+    <div id="particles-js"></div>
+    <!-- ------------ -->
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <a href="" class="col-lg-1 col-1 logo">snipp.</a>
+                <nav class="col-lg-11 col-11">
+                    <a href="javascript:void(0);" class="navigation-bar" onclick="navbarToggle()">
+                        <i class="fa fa-bars"> MENU</i>
+                    </a>
+                    <ul class="navigation">
+                        <li><a href="#home" class="navigation-item__active">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#service">Services</a></li>
+                        <li class="navigation-item__dropmenu">
+                            <a href="#work">Portfolio <i class="fa fa-caret-down"></i></a>
+                            <ul class="dropmenu-item">
+                                <li><a href="">Portfolio</a></li>
+                                <li><a href="">Portfolio Single</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#blog">Case Studies</a></li>
+                        <li><a href="#footer">Contact</a></li>
+                        <li><a class="get-in-touch" href="">Get in touch</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="responsive-menu">
+                <li><a href="#home" class="menu-item__active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Services</a></li>
+                <li id="height" class="menu-item__dropmenu">
+                    <a href="#work">Portfolio <i class="fa fa-caret-down"></i></a>
+                    <ul class="dropmenu-item">
+                        <li><a href="">Portfolio</a></li>
+                        <li><a href="">Portfolio Single</a></li>
+                    </ul>
+                </li>
+                <li><a href="#blog">Case Studies</a></li>
+                <li><a href="#footer">Contact</a></li>
+                <li><a class="get-in-touch" href="">Get in touch</a></li>
+            </div>
+        </div>
+    </header>
+    <!-- ------ -->
+    <!-- Banner -->
+    <section class="banner" data-aos="fade-up" data-scrollax-parent="true">
+        <h1 data-scrollax="properties:{'translateY':'30%','opacity':2}">We love to create <strong>Beautiful</strong> websites</h1>
+        <a data-scrollax="properties:{'translateY':'30%','opacity':2}" href="">Get in touch</a>
+    </section>
+    <!-- ------ -->
+    <!-- About -->
+    <section id="about" class="about bg-light" data-aos="fade-up">
+        <div class="fluid-container" data-aos="fade-up">
+            <div class=" about-item row" data-scrollax-parent="true">
+                <div class="about-right col-md-3 col-12" data-scrollax="properties:{'translateY':'-30%'}">
+                    <a href="">
+                        <div class="about-item__before">
+                            <h5>The Verge</h5>
+                            <span>Website</span>
+                        </div>
+                        <div class="about-item__image"><img src="./assets/images/about/1.jpg" alt=""></div>
+                        <div class="about-item__after">
+                            <div class="author"><img src="./assets/images/author/1.jpg" alt=""></div>
+                            <div class="info">
+                                <h5>John Bruce</h5>
+                                <span>Designer</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="about-center col-md-6 col-12" data-scrollax="properties:{'translateY':'-30%'}">
+                    <div class="about-center__above row">
+                        <div class="col-md-8 col-12">
+                            <a href="">
+                                <div class="about-item__before">
+                                    <h5>Racks</h5>
+                                    <span>Website</span>
+                                </div>
+                                <div class="about-item__image"><img src="./assets/images/about/2.jpg" alt=""></div>
+                                <div class="about-item__after">
+                                    <div class="author"><img src="./assets/images/author/1.jpg" alt=""></div>
+                                    <div class="info">
+                                        <h5>John Bruce</h5>
+                                        <span>Designer</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <a href="">
+                                <div class="about-item__before">
+                                    <h5>Zendesk</h5>
+                                    <span>Website</span>
+                                </div>
+                                <div class="about-item__image"><img src="./assets/images/about/4.jpg" alt=""></div>
+                                <div class="about-item__after">
+                                    <div class="author"><img src="./assets/images/author/1.jpg" alt=""></div>
+                                    <div class="info">
+                                        <h5>John Bruce</h5>
+                                        <span>Designer</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="about-center__below row">
+                        <div class="col-md-8 col-12">
+                            <a href="">
+                                <div class="about-item__before">
+                                    <h5>Curator</h5>
+                                    <span>Website</span>
+                                </div>
+                                <div class="about-item__image"><img src="./assets/images/about/3.jpg" alt=""></div>
+                                <div class="about-item__after">
+                                    <div class="author"><img src="./assets/images/author/1.jpg" alt=""></div>
+                                    <div class="info">
+                                        <h5>John Bruce</h5>
+                                        <span>Designer</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <a href="">
+                                <div class="about-item__before">
+                                    <h5>Tasty</h5>
+                                    <span>Website</span>
+                                </div>
+                                <div class="about-item__image"><img src="./assets/images/about/5.jpg" alt=""></div>
+                                <div class="about-item__after">
+                                    <div class="author"><img src="./assets/images/author/1.jpg" alt=""></div>
+                                    <div class="info">
+                                        <h5>John Bruce</h5>
+                                        <span>Designer</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-left col-md-3 col-12" data-scrollax="properties:{'translateY':'-30%'}">
+                    <a href="">
+                        <div class="about-item__before">
+                            <h5>Voyage</h5>
+                            <span>Website</span>
+                        </div>
+                        <div class="about-item__image"><img src="./assets/images/about/6.jpg" alt=""></div>
+                        <div class="about-item__after">
+                            <div class="author"><img src="./assets/images/author/1.jpg" alt=""></div>
+                            <div class="info">
+                                <h5>John Bruce</h5>
+                                <span>Designer</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="about-content" data-aos="fade-up">
+            <p>UI/UX, visual, <span>Web designer</span> with more than 12 years of experience in designing websites and mobile apps.</p>
+            <a href="">Get in touch</a>
+        </div>
+    </section>
+    <!-- ----- -->
+    <!-- Service -->
+    <section class="service" id="service" data-aos="fade-up">
+        <div class="service-title" data-aos="fade-up">
+            <span>OUR SERVICES</span>
+            <h1>Web & Mobile app design, bring your ideas to life</h1>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
+        </div>
+        <div class="service-content" data-aos="fade-up">
+            <div class="container">
+                <div class="row">
+                    <div class="service-content__item col-lg-3 col-md-6 col-12">
+                        <div class="strategy">
+                            <i class="fa fa-lightbulb-o"></i>
+                        </div>
+                        <h5>Strategy</h5>
+                        <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                    </div>
+                    <div class="service-content__item col-lg-3 col-md-6 col-12">
+                        <div class="design">
+                            <i class="fa fa-laptop"></i>
+                        </div>
+                        <h5>Design</h5>
+                        <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                    </div>
+                    <div class="service-content__item col-lg-3 col-md-6 col-12">
+                        <div class="development">
+                            <i class="fa fa-gear"></i>
+                        </div>
+                        <h5>Development</h5>
+                        <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                    </div>
+                    <div class="service-content__item col-lg-3 col-md-6 col-12">
+                        <div class="help">
+                            <i class="fa fa-question-circle"></i>
+                        </div>
+                        <h5>Help & Supports</h5>
+                        <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ------- -->
+    <!-- Subcribe -->
+    <section class="subcribe" data-aos="fade-up">
+        <h1>Subcribe to our Newsletter</h1>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
+        <form>
+            <input type="text" placeholder="Enter email address">
+            <a href=""><i class="fa fa-paper-plane"></i></a>
+        </form>
+    </section>
+    <!-- -------- -->
+    <!-- Works -->
+    <section class="work" id="work" data-aos="fade-up">
+        <div class="work-title" data-aos="fade-up">
+            <span>WORKS</span>
+            <h1>View our works below to see our design and way of development.</h1>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
+        </div>
+        <div class="work-content" data-aos="fade-up">
+            <div class="container">
+                <div class="work-content__item row" data-aos="fade-up" data-scrollax-parent="true">
+                    <a href="" class="image col-md-6 col-12" data-scrollax="properties:{'translateY':'-30%'}">
+                        <img src="./assets/images/portfolio/1.jpg" alt="">
+                    </a>
+                    <div class="content col-md-6 col-12">
+                        <span>ILLUSTRATION</span>
+                        <div><a href="">Even the all-powerful Pointing has no control</a></div>
+                        <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+                        <a class="content-view" href="">View Portfolio</a>
+                    </div>
+                </div>
+                <div class="work-content__item work-content__application row" data-aos="fade-up" data-scrollax-parent="true">
+                    <div class="content col-md-6 col-12">
+                        <span>APPLICATION</span>
+                        <div><a href="">Even the all-powerful Pointing has no control</a></div>
+                        <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+                        <a class="content-view" href="">View Portfolio</a>
+                    </div>
+                    <a href="" class="image col-md-6 col-12" data-scrollax="properties:{'translateY':'-30%'}">
+                        <img src="./assets/images/portfolio/2.jpg" alt="">
+                    </a>
+                </div>
+                <div class="work-content__item row" data-aos="fade-up" data-scrollax-parent="true">
+                    <a href="" class="image col-md-6 col-12" data-scrollax="properties:{'translateY':'-30%'}">
+                        <img src="./assets/images/portfolio/3.jpg" alt="">
+                    </a>
+                    <div class="content col-md-6 col-12">
+                        <span>WEB DESIGN</span>
+                        <div><a href="">Even the all-powerful Pointing has no control</a></div>
+                        <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+                        <a class="content-view" href="">View Portfolio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="work-view" data-aos="fade-up"><a href="">View All Project</a></div>
+    </section>
+    <!-- ----- -->
+    <!-- Customer says -->
+    <section class="customer bg-light" data-aos="fade-up">
+        <div class="customer-title" data-aos="fade-up">
+            <span>CUSTOMER SAYS</span>
+            <h1>Our satisfied customer says</h1>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
+        </div>
+        <div class="container customer-slider" data-aos="fade-up">
+            <div class="customer-slider__item">
+                <div class="image">
+                    <div class="image-thumbnail">
+                        <img src="./assets/images/author/1.jpg" alt="">
+                    </div>
+                    <div class="image-quote"><i class="fa fa-quote-left"></i></div>
+                </div>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                <h5>Dennis Green</h5>
+                <span>Marketing Manager</span>
+            </div>
+            <div class="customer-slider__item">
+                <div class="image">
+                    <div class="image-thumbnail">
+                        <img src="./assets/images/author/2.jpg" alt="">
+                    </div>
+                    <div class="image-quote"><i class="fa fa-quote-left"></i></div>
+                </div>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                <h5>Dennis Green</h5>
+                <span>UI Designer</span>
+            </div>
+            <div class="customer-slider__item">
+                <div class="image">
+                    <div class="image-thumbnail">
+                        <img src="./assets/images/author/3.jpg" alt="">
+                    </div>
+                    <div class="image-quote"><i class="fa fa-quote-left"></i></div>
+                </div>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                <h5>Dennis Green</h5>
+                <span>Web Developer</span>
+            </div>
+            <div class="customer-slider__item">
+                <div class="image">
+                    <div class="image-thumbnail">
+                        <img src="./assets/images/author/1.jpg" alt="">
+                    </div>
+                    <div class="image-quote"><i class="fa fa-quote-left"></i></div>
+                </div>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                <h5>Dennis Green</h5>
+                <span>System Analytics</span>
+            </div>
+            <div class="customer-slider__item">
+                <div class="image">
+                    <div class="image-thumbnail">
+                        <img src="./assets/images/author/2.jpg" alt="">
+                    </div>
+                    <div class="image-quote"><i class="fa fa-quote-left"></i></div>
+                </div>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                <h5>Dennis Green</h5>
+                <span>Interface Designer</span>
+            </div>
+        </div>
+    </section>
+    <!-- ------------- -->
+    <!-- Achievements -->
+    <section class="achievement" data-aos="fade-up">
+        <div class="achievement-title" data-aos="fade-up">
+            <h1>Our achievements</h1>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
+        </div>
+        <div id="counter" class="achievement-content container" data-aos="fade-up">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="counter-value" data-count="400">0</div>
+                    <p>Customers are satisfied with our professional support</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="counter-value" data-count="1000">0</div>
+                    <p>Amazing preset options to be mixed and combined</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="counter-value" data-count="8000">0</div>
+                    <p>Average response time on live chat support channel</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ------------ -->
+    <!-- Blog -->
+    <section class="blog bg-light" id="blog" data-aos="fade-up">
+        <div class="blog-title" data-aos="fade-up">
+            <span>BLOG</span>
+            <h1>Recent Blog</h1>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
+        </div>
+        <div class="blog-content" data-aos="fade-up">
+            <div class="container">
+                <div class="row">
+                    <div class="blog-content__item col-md-4 col-12">
+                        <a href="">
+                            <div class="image">
+                                <img src="./assets/images/recent-blog/1.jpg" alt="">
+                            </div>
+                            <div class="detail">
+                                <span>July 12, 2018</span>
+                                <span>Admin</span>
+                                <span><i class="fa fa-comments-o"></i> 3</span>
+                            </div>
+                            <div class="content">
+                                <span>Even the all-powerful Pointing has no control about the blind texts</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="blog-content__item col-md-4 col-12">
+                        <a href="">
+                            <div class="image"><img src="./assets/images/recent-blog/2.jpg" alt=""></div>
+                            <div class="detail">
+                                <span>July 12, 2018</span>
+                                <span>Admin</span>
+                                <span><i class="fa fa-comments-o"></i> 3</span>
+                            </div>
+                            <div class="content">
+                                <span>Even the all-powerful Pointing has no control about the blind texts</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="blog-content__item col-md-4 col-12">
+                        <a href="">
+                            <div class="image"><img src="./assets/images/recent-blog/3.jpg" alt=""></div>
+                            <div class="detail">
+                                <span>July 12, 2018</span>
+                                <span>Admin</span>
+                                <span><i class="fa fa-comments-o"></i> 3</span>
+                            </div>
+                            <div class="content">
+                                <span>Even the all-powerful Pointing has no control about the blind texts</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ---- -->
+    <!-- Footer -->
+    <footer data-aos="fade-up" id="footer" data-aos="fade-up">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-12 snipp">
+                    <h5>Snipp.</h5>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                </div>
+                <div class="col-md-3 col-12 link">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Case studies</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Portfolio</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-12 contact">
+                    <h5>Contact Information</h5>
+                    <ul>
+                        <li><a href="">198 West 21th Street, Suite 721 New York NY 10016</a></li>
+                        <li><a href="">+ 1235 2355 98</a></li>
+                        <li><a href="">info@yoursite.com</a></li>
+                        <li><a href="">email@email.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-12 social">
+                    <h5>Social</h5>
+                    <div class="social-menu" data-aos="fade-up">
+                        <div><a href=""><i class="fa fa-twitter"></i></a></div>
+                        <div><a href=""><i class="fa fa-facebook"></i></a></div>
+                        <div><a href=""><i class="fa fa-instagram"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p>Copyright ©2021 All rights reserved | This template is made with <i class="fa fa-heart"></i> by Colorlib</p>
+    </footer>
+    <!-- ------ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/scrollax@1.0.0/scrollax.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./assets/js/particles.js"></script>
+    <script src="./assets/js/navToggle.js"></script>
+    <script src="./assets/js/aos.js"></script>
+    <script src="./assets/js/scrollax.js"></script>
+    <script src="./assets/js/counter.js"></script>
+    <script src="./assets/js/slickCarousel.js"></script>
+</body>
+</html>
